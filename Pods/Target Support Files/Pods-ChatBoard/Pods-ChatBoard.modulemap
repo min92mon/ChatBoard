@@ -1,0 +1,6 @@
+framework module Pods_ChatBoard {
+  umbrella header "Pods-ChatBoard-umbrella.h"
+
+  export *
+  module * { export * }
+}
