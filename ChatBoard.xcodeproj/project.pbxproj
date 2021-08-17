@@ -19,6 +19,14 @@
 		C507119926C784DA0052CD86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C507119726C784DA0052CD86 /* LaunchScreen.storyboard */; };
 		C50711A426C784DA0052CD86 /* ChatBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50711A326C784DA0052CD86 /* ChatBoardTests.swift */; };
 		C50711AE26C784DA0052CD86 /* ChatBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50711AD26C784DA0052CD86 /* ChatBoardUITests.swift */; };
+		C50E978226CB591A002FA61F /* BoardTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50E978126CB591A002FA61F /* BoardTab.storyboard */; };
+		C50E978426CB5928002FA61F /* ChatTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50E978326CB5928002FA61F /* ChatTab.storyboard */; };
+		C50E978626CB593A002FA61F /* ProfileTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50E978526CB593A002FA61F /* ProfileTab.storyboard */; };
+		C50E978926CB9A0C002FA61F /* UINavigationItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50E978826CB9A0C002FA61F /* UINavigationItemFactory.swift */; };
+		C5E841A926CAB17900F3FFE8 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E841A826CAB17900F3FFE8 /* BoardViewController.swift */; };
+		C5E841AB26CAB19700F3FFE8 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E841AA26CAB19700F3FFE8 /* ChatViewController.swift */; };
+		C5E841AD26CAB1AF00F3FFE8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E841AC26CAB1AF00F3FFE8 /* ProfileViewController.swift */; };
+		C5E841AF26CAB1FD00F3FFE8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E841AE26CAB1FD00F3FFE8 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +67,14 @@
 		C50711A326C784DA0052CD86 /* ChatBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBoardTests.swift; sourceTree = "<group>"; };
 		C50711A926C784DA0052CD86 /* ChatBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C50711AD26C784DA0052CD86 /* ChatBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBoardUITests.swift; sourceTree = "<group>"; };
+		C50E978126CB591A002FA61F /* BoardTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BoardTab.storyboard; sourceTree = "<group>"; };
+		C50E978326CB5928002FA61F /* ChatTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatTab.storyboard; sourceTree = "<group>"; };
+		C50E978526CB593A002FA61F /* ProfileTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileTab.storyboard; sourceTree = "<group>"; };
+		C50E978826CB9A0C002FA61F /* UINavigationItemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationItemFactory.swift; sourceTree = "<group>"; };
+		C5E841A826CAB17900F3FFE8 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		C5E841AA26CAB19700F3FFE8 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		C5E841AC26CAB1AF00F3FFE8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C5E841AE26CAB1FD00F3FFE8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E48554F674BA51412C0E809A /* Pods-ChatBoardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatBoardTests.release.xcconfig"; path = "Target Support Files/Pods-ChatBoardTests/Pods-ChatBoardTests.release.xcconfig"; sourceTree = "<group>"; };
 		FF9B6853BD3AA1EEF6656DB7 /* Pods-ChatBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatBoard.debug.xcconfig"; path = "Target Support Files/Pods-ChatBoard/Pods-ChatBoard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,8 +134,13 @@
 			children = (
 				C507118926C784D90052CD86 /* AppDelegate.swift */,
 				C507118B26C784D90052CD86 /* SceneDelegate.swift */,
+				C5E841AE26CAB1FD00F3FFE8 /* TabBarController.swift */,
+				C5E841A826CAB17900F3FFE8 /* BoardViewController.swift */,
+				C50E978826CB9A0C002FA61F /* UINavigationItemFactory.swift */,
+				C5E841AA26CAB19700F3FFE8 /* ChatViewController.swift */,
+				C5E841AC26CAB1AF00F3FFE8 /* ProfileViewController.swift */,
 				C507118D26C784D90052CD86 /* ViewController.swift */,
-				C507118F26C784D90052CD86 /* Main.storyboard */,
+				C50E978726CB9922002FA61F /* StoryBoard */,
 				C507119526C784DA0052CD86 /* Assets.xcassets */,
 				C507119726C784DA0052CD86 /* LaunchScreen.storyboard */,
 				C507119A26C784DA0052CD86 /* Info.plist */,
@@ -144,6 +165,17 @@
 			path = ChatBoardUITests;
 			sourceTree = "<group>";
 		};
+		C50E978726CB9922002FA61F /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				C507118F26C784D90052CD86 /* Main.storyboard */,
+				C50E978126CB591A002FA61F /* BoardTab.storyboard */,
+				C50E978326CB5928002FA61F /* ChatTab.storyboard */,
+				C50E978526CB593A002FA61F /* ProfileTab.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
 		EFD39B8C20EDE62C28FF58DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +186,6 @@
 				85650CDC224B0A9661E8801B /* Pods-ChatBoardTests.debug.xcconfig */,
 				E48554F674BA51412C0E809A /* Pods-ChatBoardTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -277,7 +308,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C50E978626CB593A002FA61F /* ProfileTab.storyboard in Resources */,
 				C507119926C784DA0052CD86 /* LaunchScreen.storyboard in Resources */,
+				C50E978426CB5928002FA61F /* ChatTab.storyboard in Resources */,
+				C50E978226CB591A002FA61F /* BoardTab.storyboard in Resources */,
 				C507119626C784DA0052CD86 /* Assets.xcassets in Resources */,
 				C507119126C784D90052CD86 /* Main.storyboard in Resources */,
 			);
@@ -408,9 +442,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C507118E26C784D90052CD86 /* ViewController.swift in Sources */,
+				C5E841AF26CAB1FD00F3FFE8 /* TabBarController.swift in Sources */,
 				C507118A26C784D90052CD86 /* AppDelegate.swift in Sources */,
 				C507119426C784D90052CD86 /* ChatBoard.xcdatamodeld in Sources */,
+				C50E978926CB9A0C002FA61F /* UINavigationItemFactory.swift in Sources */,
 				C507118C26C784D90052CD86 /* SceneDelegate.swift in Sources */,
+				C5E841AD26CAB1AF00F3FFE8 /* ProfileViewController.swift in Sources */,
+				C5E841AB26CAB19700F3FFE8 /* ChatViewController.swift in Sources */,
+				C5E841A926CAB17900F3FFE8 /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
