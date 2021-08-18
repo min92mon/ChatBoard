@@ -23,6 +23,7 @@
 		C50E978626CB593A002FA61F /* ProfileTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50E978526CB593A002FA61F /* ProfileTab.storyboard */; };
 		C50E978926CB9A0C002FA61F /* UINavigationItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50E978826CB9A0C002FA61F /* UINavigationItemFactory.swift */; };
 		C589D60926CD12B8009526B8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C589D60826CD12B8009526B8 /* BaseViewController.swift */; };
+		C589D60D26CD34A2009526B8 /* CustomableNaviBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C589D60C26CD34A2009526B8 /* CustomableNaviBar.swift */; };
 		C5E841A926CAB17900F3FFE8 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E841A826CAB17900F3FFE8 /* BoardViewController.swift */; };
 		C5E841AB26CAB19700F3FFE8 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E841AA26CAB19700F3FFE8 /* ChatViewController.swift */; };
 		C5E841AD26CAB1AF00F3FFE8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E841AC26CAB1AF00F3FFE8 /* ProfileViewController.swift */; };
@@ -71,6 +72,7 @@
 		C50E978526CB593A002FA61F /* ProfileTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileTab.storyboard; sourceTree = "<group>"; };
 		C50E978826CB9A0C002FA61F /* UINavigationItemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationItemFactory.swift; sourceTree = "<group>"; };
 		C589D60826CD12B8009526B8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C589D60C26CD34A2009526B8 /* CustomableNaviBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomableNaviBar.swift; sourceTree = "<group>"; };
 		C5E841A826CAB17900F3FFE8 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 		C5E841AA26CAB19700F3FFE8 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		C5E841AC26CAB1AF00F3FFE8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -133,11 +135,12 @@
 			isa = PBXGroup;
 			children = (
 				C507118926C784D90052CD86 /* AppDelegate.swift */,
+				C589D60C26CD34A2009526B8 /* CustomableNaviBar.swift */,
 				C589D60826CD12B8009526B8 /* BaseViewController.swift */,
 				C507118B26C784D90052CD86 /* SceneDelegate.swift */,
 				C5E841AE26CAB1FD00F3FFE8 /* TabBarController.swift */,
-				C5E841A826CAB17900F3FFE8 /* BoardViewController.swift */,
 				C50E978826CB9A0C002FA61F /* UINavigationItemFactory.swift */,
+				C5E841A826CAB17900F3FFE8 /* BoardViewController.swift */,
 				C5E841AA26CAB19700F3FFE8 /* ChatViewController.swift */,
 				C5E841AC26CAB1AF00F3FFE8 /* ProfileViewController.swift */,
 				C50E978726CB9922002FA61F /* StoryBoard */,
@@ -441,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C589D60D26CD34A2009526B8 /* CustomableNaviBar.swift in Sources */,
 				C5E841AF26CAB1FD00F3FFE8 /* TabBarController.swift in Sources */,
 				C507118A26C784D90052CD86 /* AppDelegate.swift in Sources */,
 				C507119426C784D90052CD86 /* ChatBoard.xcdatamodeld in Sources */,

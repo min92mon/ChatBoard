@@ -13,11 +13,16 @@ import UIKit
     @objc optional func NewChatButtonAction(_ Sender: Any)
 }
 
+// MARK: - Implement Common Action in NavigationItem
+extension UINavigationItemFactoryDelegate {
+    
+}
+
 class UINavigationItemFactory {
     var delegate : UINavigationItemFactoryDelegate?
     
-    init() {
-        delegate = nil
+    init(delegate : UINavigationItemFactoryDelegate?) {
+        self.delegate = delegate
     }
     
     func MakeSettingButton() -> UIBarButtonItem {
@@ -37,11 +42,11 @@ class UINavigationItemFactory {
     }
     
     func MakeNewChatButton() -> UIBarButtonItem {
-        let searchBtn = UIBarButtonItem(image: UIImage(systemName: "plus.message"),
+        let newChatBtn = UIBarButtonItem(image: UIImage(systemName: "plus.message"),
                                         style: .plain,
                                         target: delegate,
-                                        action: #selector(delegate?.SearchButtonAction(_:)))
-        return searchBtn
+                                        action: #selector(delegate?.NewChatButtonAction(_:)))
+        return newChatBtn
     }
     
     func MakeTitleLabel(text: String) -> UILabel {
@@ -51,8 +56,4 @@ class UINavigationItemFactory {
         title.text = text
         return title
     }
-}
-
-// MARK: - Implement Common Action in NavigationItem
-extension UINavigationItemFactoryDelegate {
 }

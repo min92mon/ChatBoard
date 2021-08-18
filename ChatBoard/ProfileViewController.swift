@@ -7,17 +7,42 @@
 
 import UIKit
 
-class ProfileViewController: BaseViewController, UINavigationItemFactoryDelegate {
+class ProfileViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let naviItemFactory = UINavigationItemFactory()
-        naviItemFactory.delegate = self
-        
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: naviItemFactory.MakeTitleLabel(text: "프로필"))
-        self.navigationItem.rightBarButtonItems = [naviItemFactory.MakeSettingButton()]
     }
     
-    func SettingButtonAction(_ Sender: Any) {
+    override func setupLayout() {
+        super.setupLayout()
+        setupNavigtaionBar()
+    }
+}
+
+// MARK: - UINavigationItemFactoryDelegate Protocol
+extension ProfileViewController: UINavigationItemFactoryDelegate {
+      func SettingButtonAction(_ Sender: Any) {
+        print("setting")
+    }
+}
+
+// MARK: - CustomableNaviBar Protocol
+extension ProfileViewController: CustomableNaviBar {
+    var naviItemFactory : UINavigationItemFactory {
+        get {
+            return UINavigationItemFactory(delegate: self)
+        }
+    }
+    
+    func MakeLeftNaviItems() -> [UIBarButtonItem]? {
+        return [UIBarButtonItem(customView: naviItemFactory.MakeTitleLabel(text: "프로필"))]
+    }
+    
+    func MakeRightNaviItems() -> [UIBarButtonItem]? {
+        return [naviItemFactory.MakeSettingButton()]
+    }
+    
+    func MakeNaviTitleView() -> UIView? {
+        return nil
     }
 }
