@@ -12,7 +12,6 @@
 		B2E4BD01B0B63B6DBE026EE8 /* Pods_ChatBoardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C51B2BA87973ED1559F489 /* Pods_ChatBoardTests.framework */; };
 		C507118A26C784D90052CD86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507118926C784D90052CD86 /* AppDelegate.swift */; };
 		C507118C26C784D90052CD86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507118B26C784D90052CD86 /* SceneDelegate.swift */; };
-		C507118E26C784D90052CD86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507118D26C784D90052CD86 /* ViewController.swift */; };
 		C507119126C784D90052CD86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C507118F26C784D90052CD86 /* Main.storyboard */; };
 		C507119426C784D90052CD86 /* ChatBoard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C507119226C784D90052CD86 /* ChatBoard.xcdatamodeld */; };
 		C507119626C784DA0052CD86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C507119526C784DA0052CD86 /* Assets.xcassets */; };
@@ -23,6 +22,7 @@
 		C50E978426CB5928002FA61F /* ChatTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50E978326CB5928002FA61F /* ChatTab.storyboard */; };
 		C50E978626CB593A002FA61F /* ProfileTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50E978526CB593A002FA61F /* ProfileTab.storyboard */; };
 		C50E978926CB9A0C002FA61F /* UINavigationItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50E978826CB9A0C002FA61F /* UINavigationItemFactory.swift */; };
+		C589D60926CD12B8009526B8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C589D60826CD12B8009526B8 /* BaseViewController.swift */; };
 		C5E841A926CAB17900F3FFE8 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E841A826CAB17900F3FFE8 /* BoardViewController.swift */; };
 		C5E841AB26CAB19700F3FFE8 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E841AA26CAB19700F3FFE8 /* ChatViewController.swift */; };
 		C5E841AD26CAB1AF00F3FFE8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E841AC26CAB1AF00F3FFE8 /* ProfileViewController.swift */; };
@@ -57,7 +57,6 @@
 		C507118626C784D90052CD86 /* ChatBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C507118926C784D90052CD86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C507118B26C784D90052CD86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C507118D26C784D90052CD86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C507119026C784D90052CD86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C507119326C784D90052CD86 /* ChatBoard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatBoard.xcdatamodel; sourceTree = "<group>"; };
 		C507119526C784DA0052CD86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		C50E978326CB5928002FA61F /* ChatTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatTab.storyboard; sourceTree = "<group>"; };
 		C50E978526CB593A002FA61F /* ProfileTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileTab.storyboard; sourceTree = "<group>"; };
 		C50E978826CB9A0C002FA61F /* UINavigationItemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationItemFactory.swift; sourceTree = "<group>"; };
+		C589D60826CD12B8009526B8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C5E841A826CAB17900F3FFE8 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 		C5E841AA26CAB19700F3FFE8 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		C5E841AC26CAB1AF00F3FFE8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -133,13 +133,13 @@
 			isa = PBXGroup;
 			children = (
 				C507118926C784D90052CD86 /* AppDelegate.swift */,
+				C589D60826CD12B8009526B8 /* BaseViewController.swift */,
 				C507118B26C784D90052CD86 /* SceneDelegate.swift */,
 				C5E841AE26CAB1FD00F3FFE8 /* TabBarController.swift */,
 				C5E841A826CAB17900F3FFE8 /* BoardViewController.swift */,
 				C50E978826CB9A0C002FA61F /* UINavigationItemFactory.swift */,
 				C5E841AA26CAB19700F3FFE8 /* ChatViewController.swift */,
 				C5E841AC26CAB1AF00F3FFE8 /* ProfileViewController.swift */,
-				C507118D26C784D90052CD86 /* ViewController.swift */,
 				C50E978726CB9922002FA61F /* StoryBoard */,
 				C507119526C784DA0052CD86 /* Assets.xcassets */,
 				C507119726C784DA0052CD86 /* LaunchScreen.storyboard */,
@@ -441,11 +441,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C507118E26C784D90052CD86 /* ViewController.swift in Sources */,
 				C5E841AF26CAB1FD00F3FFE8 /* TabBarController.swift in Sources */,
 				C507118A26C784D90052CD86 /* AppDelegate.swift in Sources */,
 				C507119426C784D90052CD86 /* ChatBoard.xcdatamodeld in Sources */,
 				C50E978926CB9A0C002FA61F /* UINavigationItemFactory.swift in Sources */,
+				C589D60926CD12B8009526B8 /* BaseViewController.swift in Sources */,
 				C507118C26C784D90052CD86 /* SceneDelegate.swift in Sources */,
 				C5E841AD26CAB1AF00F3FFE8 /* ProfileViewController.swift in Sources */,
 				C5E841AB26CAB19700F3FFE8 /* ChatViewController.swift in Sources */,

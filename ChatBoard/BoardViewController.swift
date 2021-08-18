@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BoardViewController: UIViewController, UINavigationItemFactoryDelegate {
+class BoardViewController: BaseViewController, UINavigationItemFactoryDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         let naviItemFactory = UINavigationItemFactory()

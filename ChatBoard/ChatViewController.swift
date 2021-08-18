@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChatViewController: UIViewController, UINavigationItemFactoryDelegate {
+class ChatViewController: BaseViewController, UINavigationItemFactoryDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()

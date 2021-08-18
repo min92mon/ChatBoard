@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController, UINavigationItemFactoryDelegate {
+class ProfileViewController: BaseViewController, UINavigationItemFactoryDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
