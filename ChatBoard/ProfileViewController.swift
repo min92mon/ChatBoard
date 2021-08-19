@@ -21,8 +21,12 @@ class ProfileViewController: BaseViewController {
 
 // MARK: - UINavigationItemFactoryDelegate Protocol
 extension ProfileViewController: UINavigationItemFactoryDelegate {
-      func SettingButtonAction(_ Sender: Any) {
+    func SettingButtonAction(_ Sender: Any) {
         print("setting")
+    }
+    
+    func EditButtonAction(_ Sender: Any) {
+        print("edit")
     }
 }
 
@@ -39,7 +43,8 @@ extension ProfileViewController: CustomableNaviBar {
     }
     
     func MakeRightNaviItems() -> [UIBarButtonItem]? {
-        return [naviItemFactory.MakeSettingButton()]
+        return [naviItemFactory.MakeSettingButton(),
+                naviItemFactory.MakeEditButton()]
     }
     
     func MakeNaviTitleView() -> UIView? {

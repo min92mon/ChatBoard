@@ -11,6 +11,7 @@ import UIKit
     @objc optional func SettingButtonAction(_ Sender: Any)
     @objc optional func SearchButtonAction(_ Sender: Any)
     @objc optional func NewChatButtonAction(_ Sender: Any)
+    @objc optional func EditButtonAction(_ Sender: Any)
 }
 
 // MARK: - Implement Common Action in NavigationItem
@@ -43,10 +44,18 @@ class UINavigationItemFactory {
     
     func MakeNewChatButton() -> UIBarButtonItem {
         let newChatBtn = UIBarButtonItem(image: UIImage(systemName: "plus.message"),
-                                        style: .plain,
-                                        target: delegate,
-                                        action: #selector(delegate?.NewChatButtonAction(_:)))
+                                         style: .plain,
+                                         target: delegate,
+                                         action: #selector(delegate?.NewChatButtonAction(_:)))
         return newChatBtn
+    }
+    
+    func MakeEditButton() -> UIBarButtonItem {
+        let editButton = UIBarButtonItem(image: UIImage(systemName: "square.and.pencil"),
+                                         style: .plain,
+                                         target: delegate,
+                                         action: #selector(delegate?.EditButtonAction(_:)))
+        return editButton
     }
     
     func MakeTitleLabel(text: String) -> UILabel {
