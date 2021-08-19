@@ -7,6 +7,9 @@ target 'ChatBoard' do
 
   # Pods for ChatBoard
   pod 'Alamofire', '~> 5.2'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+  pod 'Firebase/Analytics'
 
   target 'ChatBoardTests' do
     inherit! :search_paths
