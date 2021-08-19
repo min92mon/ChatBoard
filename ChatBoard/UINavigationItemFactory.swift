@@ -7,6 +7,13 @@
 
 import UIKit
 
+struct NaviItemImgName {
+    static let SETTING = "gearshape"
+    static let SEARCH = "magnifyingglass"
+    static let NEWCHAT = "plus.message"
+    static let EDIT = "square.and.pencil"
+}
+
 @objc protocol UINavigationItemFactoryDelegate {
     @objc optional func SettingButtonAction(_ Sender: Any)
     @objc optional func SearchButtonAction(_ Sender: Any)
@@ -27,7 +34,7 @@ class UINavigationItemFactory {
     }
     
     func MakeSettingButton() -> UIBarButtonItem {
-        let settingBtn = UIBarButtonItem(image: UIImage(systemName: "gearshape"),
+        let settingBtn = UIBarButtonItem(image: UIImage(systemName: NaviItemImgName.SETTING),
                                          style: .plain,
                                          target: delegate,
                                          action: #selector(delegate?.SettingButtonAction(_:)))
@@ -35,7 +42,7 @@ class UINavigationItemFactory {
     }
     
     func MakeSearchButton() -> UIBarButtonItem {
-        let searchBtn = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"),
+        let searchBtn = UIBarButtonItem(image: UIImage(systemName: NaviItemImgName.SEARCH),
                                         style: .plain,
                                         target: delegate,
                                         action: #selector(delegate?.SearchButtonAction(_:)))
@@ -43,7 +50,7 @@ class UINavigationItemFactory {
     }
     
     func MakeNewChatButton() -> UIBarButtonItem {
-        let newChatBtn = UIBarButtonItem(image: UIImage(systemName: "plus.message"),
+        let newChatBtn = UIBarButtonItem(image: UIImage(systemName: NaviItemImgName.NEWCHAT),
                                          style: .plain,
                                          target: delegate,
                                          action: #selector(delegate?.NewChatButtonAction(_:)))
@@ -51,7 +58,7 @@ class UINavigationItemFactory {
     }
     
     func MakeEditButton() -> UIBarButtonItem {
-        let editButton = UIBarButtonItem(image: UIImage(systemName: "square.and.pencil"),
+        let editButton = UIBarButtonItem(image: UIImage(systemName: NaviItemImgName.EDIT),
                                          style: .plain,
                                          target: delegate,
                                          action: #selector(delegate?.EditButtonAction(_:)))
