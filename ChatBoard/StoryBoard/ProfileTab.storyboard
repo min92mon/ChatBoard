@@ -22,7 +22,7 @@
                     <tabBarItem key="tabBarItem" title="프로필" id="Icf-8C-dEp">
                         <imageReference key="image" image="person" catalog="system"/>
                     </tabBarItem>
-                    <navigationItem key="navigationItem" title="프로필" id="UZu-o4-jMJ"/>
+                    <navigationItem key="navigationItem" id="UZu-o4-jMJ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

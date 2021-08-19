@@ -22,7 +22,7 @@
                     <tabBarItem key="tabBarItem" title="게시판" id="K4h-OI-eZ1">
                         <imageReference key="image" image="newspaper" catalog="system"/>
                     </tabBarItem>
-                    <navigationItem key="navigationItem" title="게시판" id="US0-FN-R8W"/>
+                    <navigationItem key="navigationItem" id="US0-FN-R8W"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

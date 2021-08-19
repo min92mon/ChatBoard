@@ -34,7 +34,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="npK-vX-gAS">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xQM-H3-gsl" customClass="TabBarController" customModule="ChatBoard" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xQM-H3-gsl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Om5-XO-RoX">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

@@ -22,7 +22,7 @@
                     <tabBarItem key="tabBarItem" title="채팅" id="b00-qY-AJJ">
                         <imageReference key="image" image="message" catalog="system"/>
                     </tabBarItem>
-                    <navigationItem key="navigationItem" title="채팅" id="gSU-Tp-HJd"/>
+                    <navigationItem key="navigationItem" id="gSU-Tp-HJd"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
